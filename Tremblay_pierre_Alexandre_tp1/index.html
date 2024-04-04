@@ -1,0 +1,127 @@
+<!-- Cette Application sert a présenté les différentes options de sortie des différentes SDC de la ville de québec . Cette carte présente les différentes SDC de la ville de Québec ainsi qu'une présentation de ce que c'Est un SDC-->
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- donner pour info -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css\tp1.css">
+    <!-- Leaflet's CSS et JS -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+       integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+       integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">
+    </script>
+         <!-- Ajouter Leaflet au projet --style  -->
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+         integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+         crossorigin=""/>
+     
+         <!-- Ajouter Leaflet au projet --script -->
+         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+         crossorigin=""></script>
+     
+     
+          <!-- Load Esri Leaflet from CDN -->
+          <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js"
+          integrity="sha512-oUArlxr7VpoY7f/dd3ZdUL7FGOvS79nXVVQhxlg6ij4Fhdc4QID43LUFRs7abwHNJ0EYWijiN5LP2ZRR2PY4hQ=="
+          crossorigin=""></script>
+     
+      <!-- Load Esri Leaflet Vector from CDN -->
+      <script src="https://unpkg.com/esri-leaflet-vector@3.1.1/dist/esri-leaflet-vector.js"
+          integrity="sha512-7rLAors9em7cR3/583gZSvu1mxwPBUjWjdFJ000pc4Wpu+fq84lXF1l4dbG4ShiPQ4pSBUTb4e9xaO6xtMZIlA=="
+          crossorigin=""></script>
+     
+      <!-- Load Esri Leaflet Renderers -->
+      <!-- This will hook into Esri Leaflet to get renderer info when adding a feature layer -->
+      <script src="https://unpkg.com/esri-leaflet-renderers@2.0.6"></script>
+    <link rel="stylesheet" href="Leaflet addon\Leaflet.Legend-master\src\leaflet.legend.css" />
+    <script type="text/javascript" src="Leaflet addon\Leaflet.Legend-master\src\leaflet.legend.js"></script>
+      
+
+       <script src="https://unpkg.com/esri-leaflet@3.0.4/dist/esri-leaflet.js"
+       integrity="sha512-oUArlxr7VpoY7f/dd3ZdUL7FGOvS79nXVVQhxlg6ij4Fhdc4QID43LUFRs7abwHNJ0EYWijiN5LP2ZRR2PY4hQ=="
+       crossorigin=""></script>
+  
+   <!-- Load Esri Leaflet Vector from CDN -->
+   <script src="https://unpkg.com/esri-leaflet-vector@3.1.1/dist/esri-leaflet-vector.js"
+       integrity="sha512-7rLAors9em7cR3/583gZSvu1mxwPBUjWjdFJ000pc4Wpu+fq84lXF1l4dbG4ShiPQ4pSBUTb4e9xaO6xtMZIlA=="
+       crossorigin=""></script>
+  
+   <!-- Load Esri Leaflet Renderers -->
+   <!-- This will hook into Esri Leaflet to get renderer info when adding a feature layer -->
+   <script src="https://unpkg.com/esri-leaflet-renderers@2.0.6"></script>
+      
+   <script src="donne\bar.js"></script>
+   <script src="Leaflet addon\Leaflet.AccuratePosition.js"></script>
+    </head>
+<body>
+    <div class="header">
+        <img src="Image\L.CégepLimoilou_1cHor [Converti].png" class="fixed" alt=""><!-- pour logo-->
+    </div>
+
+    <div class="wrapper">
+        <div class="sliding-background"></div>
+    </div>
+
+    <header><!-- entete-->
+        <h1>SDC Québec</h1>
+        <nav>
+            <ul>
+                <li><a href="#section_accueil">Accueil</a></li>
+                <li><a href="#section_services">Services</a></li>
+                <li><a href="#section_contenu_3">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section_carte" ><!-- carte-->
+      <h2>Vos différentes options</h2>
+      <div id="map"></div>
+      <script src="tp1.js"></script>
+    
+
+    <section id="section_services"class="contenu">
+        <h2>Services</h2>
+        <p>Nous offrons une variété de services pour répondre à vos besoins.</p>
+    </section>
+
+    <section id="section_contenu_1" class="contenu">
+        <h2>Contenu 1</h2>
+        <img src="https://img1.wsimg.com/isteam/ip/67960bde-5ce3-4023-9fb5-e9392c360399/rsdcqc.jpg" alt="Image 1">
+        <p>Ceci est un contenu textuel associé à l'image.</p>
+    </section>
+
+    <section id="section_contenu_2" class="contenu">
+        <h2>Contenu 2</h2>
+        <p>Ceci est un autre contenu textuel.</p>
+    </section>
+
+    <section id="section_contenu_3" class="contenu">
+        <h2>Contenu 3</h2>
+        </html>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lJ_GJXViV2k?si=JmQWXwYmFp6junYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>Vous pouvez également inclure du contenu audiovisuel.</p>
+    </section>
+
+    
+    
+    
+
+    
+
+    <footer>
+        <p>&copy; Pierre Alexandre Tremblay.</p>
+    </footer>
+
+ 
+</body>
+</html>
+    
+    <script src="JAVAscript\script.js"></script>
+   
+    
+   
+</body>
+</html>
